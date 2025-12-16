@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+/* Header */
+header {
+    background: #003366;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(to right, #003366, #0059b3);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.banner button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #ffcc00;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Exams Section */
+.exams {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 200px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
